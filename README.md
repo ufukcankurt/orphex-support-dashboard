@@ -120,6 +120,17 @@ This project uses **Yarn** as the package manager.
     yarn build
     ```
 
+## 🚀🛠️  Future Improvements & Roadmap
+* **Comprehensive Testing Suite (Unit & E2E):** While core logic is tested, I would increase coverage by adding Playwright for End-to-End testing.
+
+* **Advanced Data Visualization:** I would implement a "Drill-down" feature in Highcharts, allowing agents to click on chart segments to instantly filter the table by that specific status or priority.
+
+* **Performance Optimization for Large Scales:** Implement Virtual Scrolling or Dynamic Lazy Loading to ensure the dashboard maintains its "lightning-fast" performance even when handling tens of thousands of support requests.
+
+* **Advanced Comment Management:** Expand the internal chat simulation to allow agents to edit or delete their own notes.
+
+* **Advanced Theming (Dark & Light Mode):** I would implement a robust, system-aware Dark/Light Mode toggle using Tailwind CSS or CSS Variables.
+
 ## 🖼️ Screenshots
 
 ### Dashboard View
