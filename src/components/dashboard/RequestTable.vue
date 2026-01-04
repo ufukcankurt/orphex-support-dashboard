@@ -2,7 +2,7 @@
 import { useRouter } from 'vue-router';
 import { useRequestStore } from '../../stores/requestStore';
 import { checkNeedsAttention } from '../../utils/logic';
-import type { SupportRequest } from '../../types';
+import type { SupportRequest, SortableColumn } from '../../types';
 import { TABLE_COLUMNS } from '../../constants';
 import StatusBadge from '../common/StatusBadge.vue';
 
@@ -77,7 +77,7 @@ const formatDate = (dateString: string) => {
             v-for="col in TABLE_COLUMNS"
             :key="col.key"
             scope="col"
-            @click="store.toggleSort(col.key)"
+            @click="store.toggleSort(col.key as SortableColumn)"
             class="px-6 py-4 text-xs font-semibold text-slate-500 uppercase tracking-wider cursor-pointer hover:text-slate-700 hover:bg-slate-100 transition select-none group"
             :class="[col.align === 'right' ? 'text-right' : 'text-left', col.className]"
           >

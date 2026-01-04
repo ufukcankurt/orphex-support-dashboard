@@ -2,7 +2,7 @@ import type { SupportRequest, Comment } from '../types';
 import { ALL_STATUSES, ALL_PRIORITIES } from '../constants';
 import { REAL_NAMES, TITLES, TAGS_POOL, CUSTOMER_MESSAGES, AGENT_MESSAGES } from '../constants/mockData';
 
-const getRandom = <T>(arr: T[] | readonly T[]): T => arr[Math.floor(Math.random() * arr.length)];
+const getRandom = <T>(arr: T[] | readonly T[]): T => arr[Math.floor(Math.random() * arr.length)] as T;
 
 export const generateMockData = (count: number): SupportRequest[] => {
   const requests: SupportRequest[] = [];

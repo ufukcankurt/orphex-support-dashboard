@@ -24,7 +24,7 @@ describe('Store: Request Store Operations', () => {
 
     store.searchQuery = 'Banana';
     expect(store.filteredRequests).toHaveLength(1);
-    expect(store.filteredRequests[0].title).toBe('Banana Issue');
+    expect(store.filteredRequests[0]?.title).toBe('Banana Issue');
   });
 
   it('sorts requests by priority descending (High -> Low)', () => {
@@ -40,8 +40,8 @@ describe('Store: Request Store Operations', () => {
     store.sortDirection = 'desc';
 
     const sorted = store.filteredRequests;
-    expect(sorted[0].priority).toBe('High');
-    expect(sorted[1].priority).toBe('Medium');
-    expect(sorted[2].priority).toBe('Low');
+    expect(sorted[0]?.priority).toBe('High');
+    expect(sorted[1]?.priority).toBe('Medium');
+    expect(sorted[2]?.priority).toBe('Low');
   });
 });

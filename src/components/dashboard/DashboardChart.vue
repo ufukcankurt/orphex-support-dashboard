@@ -37,7 +37,7 @@ const chartOptions = computed(() => {
     },
     title: {
       text: 'Request Status Distribution',
-      align: 'left',
+      align: 'left' as const,
       style: { fontSize: '16px', fontWeight: 'bold', color: '#1e293b' },
     },
     xAxis: {
@@ -49,7 +49,7 @@ const chartOptions = computed(() => {
       },
     },
     yAxis: {
-      title: { text: null },
+      title: { text: undefined },
       gridLineColor: '#f1f5f9',
       labels: { style: { color: '#94a3b8' } },
       allowDecimals: false,
@@ -79,6 +79,7 @@ const chartOptions = computed(() => {
     },
     series: [
       {
+        type: 'column' as const,
         name: 'Requests',
         data: seriesData,
       },
