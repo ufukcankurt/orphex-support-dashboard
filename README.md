@@ -119,3 +119,25 @@ This project uses **Yarn** as the package manager.
     ```bash
     yarn build
     ```
+
+## 🖼️ Screenshots
+
+### Dashboard View
+![Dashboard View](./public/screenshots/home_1.png)
+*A high-level overview featuring real-time status distribution and a unified space for managing requests with at-a-glance indicators.*
+
+----
+
+![Dashboard View](./public/screenshots/home_4.png)
+*Clickable table headers for instant, weight-based sorting by status, priority, or date.*
+
+----
+
+![Dashboard View](./public/screenshots/home_3.png)
+*Instantly isolate tickets that need immediate action. The 'Needs Attention' toggle hides the noise and shows exactly what to focus on and why.*
+
+----
+
+### Detail View
+![Detail View](./public/screenshots/detail_1.png)
+*In-Depth Ticket Management: A dedicated workspace for deep-diving into ticket history, managing internal agent communications, and performing instant status or priority transitions.*
